@@ -1,22 +1,2 @@
-<app-root>
-  <div class="header">
-
-  </div>
-
-  <div class="ships">
-    <title>Leydi y Jessica E8</title>
-    <div class="item" *ngFor="let item of data">
-      <h2>{{ item.roles }}</h2>
-      <p>{{ item.name }}</p>
-      <p>{{ item.link }}</p>
-      <p>{{ item.image}}</p>
-      <p>{{ item.launches}}</p>
-      <p>{{ item.home_port}}</p>
-    </div>
-  </div>
-
-
-</app-root>
-
-
-
+<p><input type="text" [(ngModel)]="imgParent"></p>
+<app-img [img]="imgParent"></app-img>
